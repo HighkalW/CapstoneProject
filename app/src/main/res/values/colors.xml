@@ -8,6 +8,7 @@
     <color name="black">#FF000000</color>
     <color name="colorBase">#EEEEEE</color>
     <color name="primary">#EA76A4</color>
+    <color name="colorPrimary">#E47BA5</color>
     <color name="white">#FFFFFFFF</color>
     <color name="colorPrimaryVariant">#2A284B</color>
     <color name="dark_blue_01">#263F5E</color>
