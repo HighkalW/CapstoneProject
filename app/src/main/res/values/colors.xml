@@ -6,5 +6,23 @@
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
+    <color name="colorBase">#EEEEEE</color>
+    <color name="primary">#EA76A4</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimaryVariant">#2A284B</color>
+    <color name="dark_blue_01">#263F5E</color>
+    <color name="black_01">#1D232E</color>
+    <color name="grey_01">#888888</color>
+    <color name="red_01">#DA1213</color>
+    <color name="nawara_01">#FE5D5C</color>
+    <color name="nawara_02">#FE5E5D</color>
+    <color name="nawara_03">#F68F8F</color>
+    <color name="nawara_04">#F9C8B8</color>
+    <color name="nawara_05">#FEC2C4</color>
+    <color name="nawara_06">#FFA91A</color>
+    <color name="nawara_07">#FEE4A6</color>
+    <color name="nawara_08">#FEF2F0</color>
+    <color name="navy">#000080</color>
+
+
 </resources>

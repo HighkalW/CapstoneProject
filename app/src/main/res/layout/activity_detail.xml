@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/nawara_04"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        tools:context=".ui.detail.DetailActivity">
+
+        <ImageView
+            android:id="@+id/img_avatar"
+            android:layout_width="265dp"
+            android:layout_height="206dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/sample_photo"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/tv_created_at"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            tools:text="@string/created_at"
+            android:layout_marginTop="8dp"
+            android:textAppearance="?attr/textAppearanceBody2"
+            android:textColor="@color/teal_200"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColorHint="@color/teal_200"
+            app:layout_constraintTop_toBottomOf="@+id/tv_detail_username" />
+
+        <TextView
+            android:id="@+id/tv_detail_username"
+            android:textColor="@color/teal_200"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textAppearance="?attr/textAppearanceHeadline6"
+            app:layout_constraintTop_toBottomOf="@id/img_avatar"
+            app:layout_constraintEnd_toEndOf="@id/img_avatar"
+            app:layout_constraintStart_toStartOf="@+id/img_avatar"
+            tools:text="@string/username" />
+
+        <TextView
+            android:id="@+id/tv_detail_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceBody2"
+            android:textColor="@color/teal_200"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_created_at"
+            tools:text="@string/description" />
+
+        <TextView
+            android:id="@+id/tv_latitude"
+            android:layout_width="99dp"
+            android:layout_height="21dp"
+            android:layout_marginTop="5dp"
+            android:textAppearance="?attr/textAppearanceBody2"
+            android:textColor="@color/teal_200"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tv_detail_description"
+            app:layout_constraintTop_toBottomOf="@+id/tv_detail_description"
+            tools:text="@string/latitude" />
+
+        <TextView
+            android:id="@+id/tv_longitude"
+            android:layout_width="99dp"
+            android:layout_height="21dp"
+            android:layout_marginTop="5dp"
+            android:textAppearance="?attr/textAppearanceBody2"
+            android:textColor="@color/teal_200"
+            app:layout_constraintEnd_toEndOf="@+id/tv_detail_description"
+
+            app:layout_constraintHorizontal_bias="0.226"
+            app:layout_constraintStart_toEndOf="@+id/tv_latitude"
+            app:layout_constraintTop_toBottomOf="@+id/tv_detail_description"
+            tools:text="@string/longitude" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -1,3 +1,38 @@
 <resources>
-    <string name="app_name">CapstoneProject</string>
+    <string name="app_name">Nawara Apps</string>
+
+    <string name="cd_logo">Nawara Logo</string>
+    <string name="motto">Let\'s Share Your Story and Get Help</string>
+    <string name="welcome">welcome</string>
+    <string name="start">Let\'s Go !!!</string>
+    <string name="swift"><![CDATA[Swipe >>]]></string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="copyright">© 2022 Nawara - Capstone Project Bangkit</string>
+    <string name="signup">Signup</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="logout">Logout</string>
+    <string name="min_length_char">Minimal Length %1$d characters</string>
+    <string name="email_hint">Text your email</string>
+    <string name="pass_hint">Text your password</string>
+    <string name="login_ket">Don\'t have any account ?</string>
+    <string name="sample_photo">sample_photo</string>
+    <string name="description">description</string>
+    <string name="username">username</string>
+    <string name="latitude">latitude</string>
+    <string name="longitude">longitude</string>
+    <string name="created_at">created at</string>
+    <string name="image_login">image login</string>
+    <string name="invalid_email">Format email is invalid!</string>
+    <string name="name">Name</string>
+    <string name="name_hint">Text your name</string>
+    <string name="signup_ket">Already have an account ?</string>
 </resources>
