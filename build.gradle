@@ -6,6 +6,7 @@ buildscript {
     }
     dependencies {
         classpath "androidx.navigation:navigation-safe-args-gradle-plugin:2.4.2"
+        classpath 'com.google.gms:google-services:4.3.10'
     }
 }
 
@@ -15,6 +16,7 @@ plugins {
     id 'org.jetbrains.kotlin.android' version '1.6.21' apply false
     id 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin' version '2.0.0' apply false
 }
+
 
 task clean(type: Delete) {
     delete rootProject.buildDir

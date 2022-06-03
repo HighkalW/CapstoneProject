@@ -35,4 +35,5 @@
     <string name="name">Name</string>
     <string name="name_hint">Text your name</string>
     <string name="signup_ket">Already have an account ?</string>
+    <string name="default_web_client_id">Web Client ID</string>
 </resources>
