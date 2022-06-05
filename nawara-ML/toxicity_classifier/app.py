@@ -1,4 +1,5 @@
 import os
+import sys
 from flask import Flask, request
 import googleapiclient.discovery
 from google.api_core.client_options import ClientOptions
@@ -6,7 +7,11 @@ from google.api_core.client_options import ClientOptions
 app = Flask(__name__)
 
 # Setup environment credentials (you'll need to change these)
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "nawara-351814-3584fbe1498e.json" # change for your GCP key
+file_dir = os.path.dirname(__file__)
+sys.path.append(file_dir)
+file_path = os.path.join(file_dir, 'nawara-351814-3584fbe1498e.json')
+
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = file_path # change for your GCP key
 project = "nawara-351814" # change for your GCP project
 region = "asia-southeast1" # change for your GCP region (where your model is hosted)
 model_name = 'nawara_toxic_classifier'
@@ -37,24 +42,18 @@ def predict_json(project, region, model, instances, version=None):
     # Create the ML Engine service object.
     # To authenticate set the environment variable
     # GOOGLE_APPLICATION_CREDENTIALS=<path_to_service_account_file>
-    prefix = "{}-ml".format(region) if region else "ml"
-    api_endpoint = "https://{}.googleapis.com".format(prefix)
+    prefix = f"{region}-ml" if region else "ml"
+    api_endpoint = f"https://{prefix}.googleapis.com"
     client_options = ClientOptions(api_endpoint=api_endpoint)
-    service = googleapiclient.discovery.build(
-        'ml', 'v1', client_options=client_options)
-    name = 'projects/{}/models/{}'.format(project, model)
+    service = googleapiclient.discovery.build('ml', 'v1', client_options=client_options)
+    name = f"projects/{project}/models/{model}"
 
     if version is not None:
-        name += '/versions/{}'.format(version)
-
-    response = service.projects().predict(
-        name=name,
-        body={'instances': instances}
-    ).execute()
-
+        name += f"/versions/{version}"
+    # print(name)
+    response = service.projects().predict(name=name, body={'instances': instances}).execute()
     if 'error' in response:
         raise RuntimeError(response['error'])
-
     return response['predictions']
 
 
