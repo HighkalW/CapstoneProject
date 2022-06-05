@@ -1,0 +1,85 @@
+{root.api}/v1{grouping}/{endpoint}
+contoh:
+http://api.nawara.com/v1/auth/login // masih belum pasti karena dari pihak MD yg buat
+
+
+Status response
+200 - OK --> call api success
+201 - CREATED --> Post success
+400 - BAD REQUEST --> Error on client
+403 - FORBIDDEN --> User not allow to access
+404 - NOT FOUND --> Request Endpoint Not FOUND
+500 - INTERNAL SERVER EROR --> Error on serve side
+502 - BAD GATEAWAY --> Invalid Response From another Request
+
+
+Status error response
+400 -> Input yang anda masukkan tidak valid coba input kembali
+
+
+GROUP: Add new story
+
+[POST] : {root.api}/{version}/{stories}/post
+
+req: 
+{
+    "title": "Title Post",
+    "image": "image.jpg",
+    "body" : " description in your post story
+}
+
+res:
+{
+    "message" : "add new story success",
+    "data" : {
+        "post_id" : 1,
+        "title" : "title story",
+        "image" : "img.png",
+        "body"  : " your descsription story",
+        "created_at" : " 07/07/2001"
+        "author" : {
+            "idUser" : 1,
+            "name" : "Bernatd"
+        } 
+    }
+}
+
+
+
+- create story post
+- get story post
+- update story post
+- delete story post
+
+
+
+setting package
+1. npm install express
+2. npm install -g nodemon
+3. npm install mongoose
+4. npm install cors
+
+jalan kan server 
+1. nodemon 
+
+jalankan di postman
+import file collcetion
+jalankan sesuai endpoint di collection sesuai method. set body -> raw -> masukkan data format json sesuai req yg di set di model
+
+
+
+
+
+respon sesuai yg diminta di API dicoding --> Berhasil 
+ "message": "Stories fetched successfully",
+    "data": {
+        "_id": "629a441ec3038f01605b5997",
+        "title": "Bernatd",
+        "body": "ini contoh ya",
+        "createdAt": "2022-06-03T17:25:50.257Z",
+        "updatedAt": "2022-06-03T17:25:50.257Z",
+        "__v": 0 
+
+    
+
+
