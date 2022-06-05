@@ -29,7 +29,7 @@
     <string name="latitude">latitude</string>
     <string name="longitude">longitude</string>
     <string name="created_at">created at</string>
-    <string name="image_login">image login</string>
+    <string name="image_login">login picture</string>
     <string name="invalid_email">Format email is invalid!</string>
     <string name="name">Name</string>
     <string name="name_hint">Text your name</string>
