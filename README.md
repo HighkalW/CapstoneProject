@@ -1,4 +1,5 @@
-# CapstoneProject
+# The Nawara Project - A Bangkit Capstone Project
+
 Sexual violence targeted at women and children have been spreading like wildfire in recent times in Indonesia. Many cases of it have yet to receive attention from the government to provide law enforcement, leading to many of the victims being reluctant to report the violence against themselves causing them to conceal the events. This tends to lead to the victims experiencing mental health issues due to feeling the lack of rights to get justice for themselves.
 
 Nawara serves as an application for women and children in Indonesia to help handle the law protection and mental consultation problems with reliable lawyers and psychologists. This app provides a safe place for the victims to tell their stories where law protection is guaranteed for them. In a patriarchal culture, women are often discriminated against, causing many of them to be afraid to speak up when experiencing violence. Therefore, it is crucial to have a platform for women and children who experienced sexual violence for them to give their aspirations, as well as receive law protection and mental health treatment reliably.
