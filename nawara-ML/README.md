@@ -8,8 +8,6 @@ This is the sub-directory of the Nawara project containing all the machine learn
 * [Technologies](#technologies)
 * [Replication Method](#replication-method)
 
-*Note: contents are still being updated*
-
 ## General Info
 The Nawara Project uses Machine Learning to do Natural Language Processing which filters out comments for toxicity before they are posted on the application.
 
