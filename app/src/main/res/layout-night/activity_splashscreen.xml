@@ -11,7 +11,7 @@
         android:id="@+id/logo"
         android:layout_width="305dp"
         android:layout_height="305dp"
-        android:src="@drawable/Nawara_1"
+        android:src="@drawable/nawara_1"
         android:layout_marginTop="110dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"

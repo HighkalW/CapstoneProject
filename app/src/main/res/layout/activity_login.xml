@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/container"
     tools:context=".ui.login.LoginActivity">
 
     <ImageView
@@ -17,7 +18,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guidelineHorizontal2"
-        app:srcCompat="@drawable/Nawara_2" />
+        app:srcCompat="@drawable/nawara_2" />
 
     <TextView
         android:id="@+id/tv_login"
