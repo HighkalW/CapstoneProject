@@ -11,6 +11,7 @@ import android.view.animation.AnimationUtils
 import android.widget.ImageView
 import android.widget.TextView
 import com.example.capstoneproject.R
+import com.example.capstoneproject.ui.login.LoginActivity
 import com.example.capstoneproject.ui.main.MainActivity
 
 class SplashScreenActivity : AppCompatActivity() {
@@ -42,9 +43,9 @@ class SplashScreenActivity : AppCompatActivity() {
 //        imagetext.startAnimation(buttomAnimation)
         slogan.startAnimation(buttomAnimation)
         Handler().postDelayed({
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
             finish()
-        }, 3000)
+        }, 2000)
     }
 }
