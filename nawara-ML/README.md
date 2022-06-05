@@ -23,8 +23,14 @@ The Machine Learning section of this project is created with:
 
 ## Replication Method
 
-### Toxicity Classifier Model
-
-1. 
-
+1. Download the dataset from Kaggle and unzip the files
+2. Change incorrect labels
+3. Preprocess the dataset (removing stopwords, removing unnecessary and non-alphanumeric characters, stemming, lowercasing and removing 'alay' words)
+4. Check and change incorrect labels again
+5. Apply text vectorization with the TextVectorization module of tensorflow.keras.layers
+6. Split the dataset into training (80%) and validation (20%) datasets
+7. Build the model
+8. Testing and validation
+9. Convert the model to JSON format
+10. Upload model to AI Platform for deployment
 
