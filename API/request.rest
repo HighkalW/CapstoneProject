@@ -1,0 +1,21 @@
+POST http://localhost:3000/product
+Content-Type: application/json
+
+{
+    "name": "situmeang",
+    "desc": "asdasdasdasda"
+}
+
+###
+GET http://localhost:3000/product
+
+### 
+GET http://localhost:3000/product/6294c4df7806a93b1c04558b
+
+###
+
+DELETE http://localhost:3000/product/6294c4df7806a93b1c04558b
+
+
+###
+PATCH http://localhost:3000/product/6294be735d61c1298c6d9c29
