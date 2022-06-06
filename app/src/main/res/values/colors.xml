@@ -24,6 +24,11 @@
     <color name="nawara_07">#FEE4A6</color>
     <color name="nawara_08">#FEF2F0</color>
     <color name="navy">#000080</color>
-
+    <color name="firebase_yellow">#FFCA28</color>
+    <color name="firebase_amber">#FFA000</color>
+    <color name="firebase_orange">#F57C00</color>
+    <color name="firebase_blue">#039BE5</color>
+    <color name="firebase_navy">#2C384A</color>
+    <color name="firebase_gray">#ECEFF1</color>
 
 </resources>
