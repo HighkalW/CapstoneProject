@@ -76,6 +76,7 @@ dependencies {
     implementation 'androidx.test.espresso:espresso-idling-resource:3.4.0'
     implementation 'androidx.test.espresso:espresso-contrib:3.4.0'
     implementation 'com.google.firebase:firebase-auth-ktx:21.0.5'
+    implementation 'com.google.firebase:firebase-firestore-ktx:24.1.2'
     kapt 'androidx.room:room-compiler:2.5.0-alpha02'
 
     testImplementation 'org.mockito:mockito-core:4.6.1'
@@ -102,4 +103,6 @@ dependencies {
 
     // Also declare the dependency for the Google Play services library and specify its version
     implementation 'com.google.android.gms:play-services-auth:20.2.0'
+    implementation 'com.firebaseui:firebase-ui-database:8.0.0'
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
 }
