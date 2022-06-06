@@ -13,13 +13,13 @@ import android.widget.TextView
 import com.example.capstoneproject.R
 import com.example.capstoneproject.ui.login.LoginActivity
 import com.example.capstoneproject.ui.main.MainActivity
+import com.example.capstoneproject.ui.onboarding.OnBoardingActivity
 
 class SplashScreenActivity : AppCompatActivity() {
 
     private lateinit var topAnimation: Animation
     private lateinit var buttomAnimation: Animation
     private lateinit var imageLogo: ImageView
-    private lateinit var imagetext : TextView
     private lateinit var slogan : TextView
 
     @Suppress("DEPRECATION")
@@ -40,10 +40,9 @@ class SplashScreenActivity : AppCompatActivity() {
         slogan = findViewById(R.id.slogan_text)
 
         imageLogo.startAnimation(topAnimation)
-//        imagetext.startAnimation(buttomAnimation)
         slogan.startAnimation(buttomAnimation)
         Handler().postDelayed({
-            val intent = Intent(this, LoginActivity::class.java)
+            val intent = Intent(this, OnBoardingActivity::class.java)
             startActivity(intent)
             finish()
         }, 2000)
