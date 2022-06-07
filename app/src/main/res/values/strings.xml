@@ -2,7 +2,7 @@
     <string name="app_name">Nawara Apps</string>
     <string name="cd_logo">Nawara Logo</string>
     <string name="motto">Let\'s Share Your Story and Get Help</string>
-    <string name="welcome">WELCOME</string>
+    <string name="welcome">welcome</string>
     <string name="start">Let\'s Go !!!</string>
     <string name="swift"><![CDATA[Swipe >>]]></string>
     <string name="title_activity_login">LoginActivity</string>
@@ -34,6 +34,5 @@
     <string name="name">Name</string>
     <string name="name_hint">Text your name</string>
     <string name="signup_ket">Already have an account ?</string>
-
-    <!--    <string name="default_web_client_id">Web Client ID</string>-->
+<!--    <string name="default_web_client_id">Web Client ID</string>-->
 </resources>
