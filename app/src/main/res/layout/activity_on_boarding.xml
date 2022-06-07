@@ -35,8 +35,8 @@
         android:id="@+id/main_logo"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -102,6 +102,7 @@
 
     <Button
         android:id="@+id/button"
+        android:backgroundTint="@color/nawara_01"
         android:layout_width="200dp"
         android:layout_height="50dp"
         android:alpha="0"
