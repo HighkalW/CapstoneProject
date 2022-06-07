@@ -52,7 +52,7 @@ db.once('open', () => console.log('Database Connected'));
 // middleware 
 app.use(cors());
 app.use(express.json());
-app.use('/v2/story/',multer({storage: fileStorage, fileFilter: fileFilter}).single('image'),route);
+app.use('/v1/stories/',multer({storage: fileStorage, fileFilter: fileFilter}).single('image'),route);
 
 
 // listening to port
