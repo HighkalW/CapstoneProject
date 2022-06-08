@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home_item"
+        android:icon="@drawable/ic_home_unclick"
+        android:title="@string/home_navbar" />
+    <item
+        android:id="@+id/chat_item"
+        android:icon="@drawable/ic_chat_unclick"
+        android:title="@string/chat_navbar" />
+    <item
+        android:id="@+id/emergency_item"
+        android:icon="@drawable/ic_phone_emergency"
+        android:title="@string/emergency_navbar" />
+    <item
+        android:id="@+id/consult_item"
+        android:icon="@drawable/ic_consult_unclick"
+        android:title="@string/consult_navbar" />
+    <item
+        android:id="@+id/profile_item"
+        android:icon="@drawable/ic_profile_unclick"
+        android:title="@string/profile_navbar" />
+
+</menu>
