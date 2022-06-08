@@ -1,56 +1,101 @@
-<com.google.android.material.card.MaterialCardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_height="wrap_content"
     android:layout_width="match_parent"
-    android:layout_marginHorizontal="16dp"
-    android:layout_marginVertical="8dp"
-    app:cardCornerRadius="5dp">
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="8dp">
+        android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/tv_username"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:textAppearance="?attr/textAppearanceHeadline6"
-            android:layout_marginTop="8dp"
-            android:textColor="@color/nawara_03"
-
+        <ImageView
+            android:id="@+id/feed_post_image"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:scaleType="centerInside"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="@string/username" />
+            tools:src="@tools:sample/backgrounds/scenic" />
 
         <TextView
-            android:id="@+id/tv_description"
-            android:layout_width="366dp"
-            android:layout_height="103dp"
-            android:ellipsize="end"
-            android:maxLines="3"
-            android:textAppearance="?attr/textAppearanceBody2"
-            android:textColor="?android:attr/textColorSecondary"
-            android:textColorHint="@color/white"
+            android:id="@+id/post_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textColor="@color/nawara_03"
+            android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_username"
-            tools:text="@string/description" />
+            app:layout_constraintTop_toBottomOf="@id/feed_post_image"
+            tools:text="This is a post description" />
+
+        <TextView
+            android:id="@+id/post_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textColor="@color/nawara_07"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/post_text"
+            tools:text="Author Name" />
+
+        <TextView
+            android:id="@+id/post_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textColor="@color/colorBase"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/post_text"
+            tools:text="HH:MM:SS" />
 
         <ImageView
-            android:id="@+id/img_story"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:contentDescription="@string/sample_photo"
-            android:scaleType="centerCrop"
+            android:id="@+id/post_like_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:src="@drawable/like_icon_outline"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/post_author" />
 
-            app:layout_constraintEnd_toEndOf="@id/tv_description"
-            app:layout_constraintStart_toStartOf="@+id/tv_description"
-            app:layout_constraintTop_toBottomOf="@id/tv_description"
-            tools:src="@tools:sample/avatars" />
+        <TextView
+            android:id="@+id/like_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/post_like_btn"
+            app:layout_constraintTop_toBottomOf="@id/post_author"
+            tools:text="1000" />
+
+        <ImageView
+            android:id="@+id/post_comment_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:src="@drawable/comment_icon"
+            app:layout_constraintStart_toEndOf="@id/like_count"
+            app:layout_constraintTop_toBottomOf="@id/post_author" />
+
+        <TextView
+            android:id="@+id/comment_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/post_comment_btn"
+            app:layout_constraintTop_toBottomOf="@id/post_author"
+            tools:text="1000" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-</com.google.android.material.card.MaterialCardView>
+</androidx.cardview.widget.CardView>
