@@ -14,6 +14,7 @@ The Nawara Project uses Machine Learning to do Natural Language Processing which
 ## Technologies
 The Machine Learning section of this project is created with:
 * Python version: 3.10.2
+* Scikit-learn version: 1.1.1
 * TensorFlow library version: 2.8.0
 * Pandas library version: 1.4.1
 * PySastrawi library version: 1.2.0
