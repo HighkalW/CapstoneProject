@@ -1,5 +1,6 @@
-package com.example.capstoneproject.data
+package com.example.capstoneproject.data.repo
 
+import com.example.capstoneproject.data.Result
 import com.example.capstoneproject.data.model.LoggedInUser
 
 /**

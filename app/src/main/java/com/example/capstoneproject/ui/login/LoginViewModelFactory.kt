@@ -2,8 +2,8 @@ package com.example.capstoneproject.ui.login
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.example.capstoneproject.data.LoginDataSource
-import com.example.capstoneproject.data.LoginRepository
+import com.example.capstoneproject.data.repo.LoginDataSource
+import com.example.capstoneproject.data.repo.LoginRepository
 
 /**
  * ViewModel provider factory to instantiate LoginViewModel.
