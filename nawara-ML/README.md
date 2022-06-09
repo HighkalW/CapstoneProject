@@ -6,6 +6,7 @@ This is the sub-directory of the Nawara project containing all the machine learn
 
 * [General Info](#general-info)
 * [Technologies](#technologies)
+* [Datasets](#datasets)
 * [Replication Method](#replication-method)
 
 ## General Info
@@ -19,6 +20,14 @@ The Machine Learning section of this project is created with:
 * Pandas library version: 1.4.1
 * PySastrawi library version: 1.2.0
 * numpy library version: 1.22.2
+
+## Datasets
+* Indonesian Abusive and Hate Speech Twitter Text
+
+  https://www.kaggle.com/datasets/ilhamfp31/indonesian-abusive-and-hate-speech-twitter-text
+* Indonesian Stoplist
+
+  https://www.kaggle.com/datasets/oswinrh/indonesian-stoplist
 
 ## Replication Method
 
