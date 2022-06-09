@@ -2,7 +2,7 @@ from flask import Flask, request
 import tensorflow as tf
 import numpy as np
 
-model_path = './toxicity_classifier/model/model_20220526-181030'
+model_path = 'nawara-ML/toxicity_classifier/model/model_20220608-214838'
 model = tf.keras.models.load_model(model_path)
 
 app = Flask(__name__)
@@ -10,7 +10,6 @@ app = Flask(__name__)
 @app.route('/')
 def hello_world():
     return 'Hello, Nawara!'
-
 
 @app.route('/predict', methods=['POST'])
 def predict():
