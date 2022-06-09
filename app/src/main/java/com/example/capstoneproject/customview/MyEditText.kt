@@ -52,20 +52,6 @@ open class MyEditText : AppCompatEditText, View.OnTouchListener {
         setButtonDrawables()
     }
 
-    private fun setButtonDrawables(
-        startOfTheText: Drawable? = null,
-        topOfTheText: Drawable? = null,
-        endOfTheText: Drawable? = null,
-        bottomOfTheText: Drawable? = null
-    ){
-        setCompoundDrawablesWithIntrinsicBounds(
-            startOfTheText,
-            topOfTheText,
-            endOfTheText,
-            bottomOfTheText
-        )
-    }
-
     override fun onTouch(v: View?, event: MotionEvent): Boolean {
         if (compoundDrawables[2] != null) {
             val clearButtonStart: Float
@@ -104,5 +90,18 @@ open class MyEditText : AppCompatEditText, View.OnTouchListener {
             }
         }
         return false
+    }
+    private fun setButtonDrawables(
+        startOfTheText: Drawable? = null,
+        topOfTheText: Drawable? = null,
+        endOfTheText: Drawable? = null,
+        bottomOfTheText: Drawable? = null
+    ){
+        setCompoundDrawablesWithIntrinsicBounds(
+            startOfTheText,
+            topOfTheText,
+            endOfTheText,
+            bottomOfTheText
+        )
     }
 }

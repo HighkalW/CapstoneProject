@@ -7,17 +7,7 @@ import android.util.AttributeSet
 import com.example.capstoneproject.R
 
 class MyPassCustom : MyEditText {
-    constructor(context: Context) : super(context) {
-        init()
-    }
 
-    constructor(context: Context, attrs: AttributeSet) : super(context, attrs) {
-        init()
-    }
-
-    constructor(context: Context, attrs: AttributeSet, defStyleAttr: Int) : super(context, attrs, defStyleAttr) {
-        init()
-    }
 
     private fun init() {
         setOnTouchListener(this)
@@ -35,5 +25,16 @@ class MyPassCustom : MyEditText {
                 // Do nothing.
             }
         })
+    }
+    constructor(context: Context) : super(context) {
+        init()
+    }
+
+    constructor(context: Context, attrs: AttributeSet) : super(context, attrs) {
+        init()
+    }
+
+    constructor(context: Context, attrs: AttributeSet, defStyleAttr: Int) : super(context, attrs, defStyleAttr) {
+        init()
     }
 }

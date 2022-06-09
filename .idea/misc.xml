@@ -26,50 +26,14 @@
         <entry key="..\:/Semester 6/FixingCapstones/CapstoneProject/app/src/main/res/layout-w936dp/activity_login.xml" value="0.1" />
         <entry key="..\:/Semester 6/FixingCapstones/CapstoneProject/app/src/main/res/layout/activity_login.xml" value="0.1" />
         <entry key="..\:/Semester 6/FixingCapstones/CapstoneProject/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Semester 6/FixingCapstones/CapstoneProject/app/src/main/res/layout/activity_on_boarding.xml" value="0.1" />
         <entry key="..\:/Semester 6/FixingCapstones/CapstoneProject/app/src/main/res/layout/activity_splashscreen.xml" value="0.1" />
+        <entry key="..\:/Semester 6/FixingCapstones/CapstoneProject/app/src/main/res/layout/fragment_chat.xml" value="0.20516304347826086" />
         <entry key="..\:/Semester 6/FixingCapstones/CapstoneProject/app/src/main/res/xml/network_security_config.xml" value="0.10885416666666667" />
         <entry key="..\:/Semester 6/TestCapstones/CapstoneProject/app/src/main/res/layout/activity_detail.xml" value="0.2" />
         <entry key="..\:/Semester 6/TestCapstones/CapstoneProject/app/src/main/res/layout/activity_login.xml" value="0.10989583333333333" />
         <entry key="..\:/Semester 6/TestCapstones/CapstoneProject/app/src/main/res/layout/activity_main.xml" value="0.10989583333333333" />
         <entry key="..\:/Semester 6/TestCapstones/CapstoneProject/app/src/main/res/layout/activity_on_boarding.xml" value="0.1" />
-        <entry key="..\:/Users/DR_Muzi/Documents/CapstoneProject/app/src/main/res/drawable/bg_bottom_nav.xml" value="0.135" />
-        <entry key="..\:/Users/DR_Muzi/Documents/CapstoneProject/app/src/main/res/drawable/chat_text_other_shape.xml" value="0.147" />
-        <entry key="..\:/Users/DR_Muzi/Documents/CapstoneProject/app/src/main/res/drawable/chat_text_self_shape.xml" value="0.147" />
-        <entry key="..\:/Users/DR_Muzi/Documents/CapstoneProject/app/src/main/res/drawable/comment_background.xml" value="0.147" />
-        <entry key="..\:/Users/DR_Muzi/Documents/CapstoneProject/app/src/main/res/drawable/ic_chat_clicked.xml" value="0.135" />
-        <entry key="..\:/Users/DR_Muzi/Documents/CapstoneProject/app/src/main/res/drawable/ic_chat_unclick.xml" value="0.135" />
-        <entry key="..\:/Users/DR_Muzi/Documents/CapstoneProject/app/src/main/res/drawable/ic_consult_clicked.xml" value="0.135" />
-        <entry key="..\:/Users/DR_Muzi/Documents/CapstoneProject/app/src/main/res/drawable/ic_consult_unclick.xml" value="0.135" />
-        <entry key="..\:/Users/DR_Muzi/Documents/CapstoneProject/app/src/main/res/drawable/ic_home_clicked.xml" value="0.135" />
-        <entry key="..\:/Users/DR_Muzi/Documents/CapstoneProject/app/src/main/res/drawable/ic_home_unclick.xml" value="0.135" />
-        <entry key="..\:/Users/DR_Muzi/Documents/CapstoneProject/app/src/main/res/drawable/ic_phone_emergency.xml" value="0.135" />
-        <entry key="..\:/Users/DR_Muzi/Documents/CapstoneProject/app/src/main/res/drawable/ic_profile_clicked.xml" value="0.135" />
-        <entry key="..\:/Users/DR_Muzi/Documents/CapstoneProject/app/src/main/res/drawable/ic_profile_unclick.xml" value="0.135" />
-        <entry key="..\:/Users/DR_Muzi/Documents/CapstoneProject/app/src/main/res/drawable/id_add_post.xml" value="0.135" />
-        <entry key="..\:/Users/DR_Muzi/Documents/CapstoneProject/app/src/main/res/drawable/search_icon.xml" value="0.147" />
-        <entry key="..\:/Users/DR_Muzi/Documents/CapstoneProject/app/src/main/res/layout-night/fragment_chat.xml" value="0.19270833333333334" />
-        <entry key="..\:/Users/DR_Muzi/Documents/CapstoneProject/app/src/main/res/layout-night/fragment_chatroom.xml" value="0.19270833333333334" />
-        <entry key="..\:/Users/DR_Muzi/Documents/CapstoneProject/app/src/main/res/layout-night/fragment_register.xml" value="0.2368659420289855" />
-        <entry key="..\:/Users/DR_Muzi/Documents/CapstoneProject/app/src/main/res/layout-night/fragment_search.xml" value="0.228125" />
-        <entry key="..\:/Users/DR_Muzi/Documents/CapstoneProject/app/src/main/res/layout-night/item_chat_other.xml" value="0.19270833333333334" />
-        <entry key="..\:/Users/DR_Muzi/Documents/CapstoneProject/app/src/main/res/layout-night/item_chat_self.xml" value="0.19270833333333334" />
-        <entry key="..\:/Users/DR_Muzi/Documents/CapstoneProject/app/src/main/res/layout-night/item_chatroom.xml" value="0.19270833333333334" />
-        <entry key="..\:/Users/DR_Muzi/Documents/CapstoneProject/app/src/main/res/layout-night/item_user.xml" value="0.228125" />
-        <entry key="..\:/Users/DR_Muzi/Documents/CapstoneProject/app/src/main/res/layout-night/items_story.xml" value="0.33" />
-        <entry key="..\:/Users/DR_Muzi/Documents/CapstoneProject/app/src/main/res/layout/activity_authentication.xml" value="0.2368659420289855" />
-        <entry key="..\:/Users/DR_Muzi/Documents/CapstoneProject/app/src/main/res/layout/activity_comments.xml" value="0.22" />
-        <entry key="..\:/Users/DR_Muzi/Documents/CapstoneProject/app/src/main/res/layout/activity_create_post.xml" value="0.25" />
-        <entry key="..\:/Users/DR_Muzi/Documents/CapstoneProject/app/src/main/res/layout/activity_login.xml" value="0.25" />
-        <entry key="..\:/Users/DR_Muzi/Documents/CapstoneProject/app/src/main/res/layout/activity_main.xml" value="0.21" />
-        <entry key="..\:/Users/DR_Muzi/Documents/CapstoneProject/app/src/main/res/layout/fragment_chatroom.xml" value="0.19270833333333334" />
-        <entry key="..\:/Users/DR_Muzi/Documents/CapstoneProject/app/src/main/res/layout/fragment_feed.xml" value="0.22" />
-        <entry key="..\:/Users/DR_Muzi/Documents/CapstoneProject/app/src/main/res/layout/fragment_login.xml" value="0.1802536231884058" />
-        <entry key="..\:/Users/DR_Muzi/Documents/CapstoneProject/app/src/main/res/layout/fragment_profile.xml" value="0.22" />
-        <entry key="..\:/Users/DR_Muzi/Documents/CapstoneProject/app/src/main/res/layout/fragment_signup.xml" value="0.228125" />
-        <entry key="..\:/Users/DR_Muzi/Documents/CapstoneProject/app/src/main/res/layout/item_comments.xml" value="0.1453125" />
-        <entry key="..\:/Users/DR_Muzi/Documents/CapstoneProject/app/src/main/res/layout/items_story.xml" value="0.33" />
-        <entry key="..\:/Users/DR_Muzi/Documents/CapstoneProject/app/src/main/res/menu/bottom_nav_view.xml" value="0.19270833333333334" />
-        <entry key="..\:/Users/DR_Muzi/Documents/CapstoneProject/app/src/main/res/menu/search_menu.xml" value="0.228125" />
       </map>
     </option>
   </component>
