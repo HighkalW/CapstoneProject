@@ -32,13 +32,15 @@ The Machine Learning section of this project is created with:
 ## Replication Method
 
 1. Download the dataset from Kaggle and unzip the files
-2. Change incorrect labels
+2. Use toxic words dataset and change toxic label into 1 if there is any toxic words no matter what the context is
 3. Preprocess the dataset (removing stopwords, removing unnecessary and non-alphanumeric characters, stemming, lowercasing and removing 'alay' words)
-4. Check and change incorrect labels again
+4. Merge hate speech and toxic label columns into 1 columns
 5. Apply text vectorization with the TextVectorization module of tensorflow.keras.layers
-6. Split the dataset into training (80%) and validation (20%) datasets
-7. Build the model
-8. Testing and validation
-9. Convert the model to JSON format
-10. Upload model to a Compute Engine and use Flask, Nginx and Gunicorn for deployment
+6. Split the dataset into training (80%) and validation (20%) datasets and convert them into tensors
+7. Build the model architecture
+8. Train and validate the model, tune the parameter until satisfied
+9. Save the model in SavedModel format
+10. Create a Flask Application to serve prediction results from requests
+11. Upload model to a Compute Engine instance, upload the files, install required modules, then install & deploy using Nginx and Gunicorn.
+
 
