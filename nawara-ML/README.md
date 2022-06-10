@@ -40,5 +40,5 @@ The Machine Learning section of this project is created with:
 7. Build the model
 8. Testing and validation
 9. Convert the model to JSON format
-10. Upload model to a Compute Engine and use Flask for deployment
+10. Upload model to a Compute Engine and use Flask, Nginx and Gunicorn for deployment
 
