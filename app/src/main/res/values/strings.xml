@@ -33,6 +33,7 @@
     <string name="invalid_email">Format email is invalid!</string>
     <string name="name">Name</string>
     <string name="name_hint">Text your name</string>
+    <string name="title_detail_activity">String</string>
     <string name="signup_ket">Already have an account ?</string>
     <string name="home_navbar">home navbar</string>
     <string name="chat_navbar">chat navbar</string>
@@ -56,10 +57,36 @@
     <string name="choose_picture">choose picture</string>
     <string name="loc_not_found">location not found</string>
     <string name="author">Nawara</string>
+    <string name="description_hint">Ceritakan pengalamanmu!</string>
+    <string name="upload">Upload</string>
+    <string name="permission_denied" translatable="false">Can\'t get permission</string>
+    <string name="message_validation">Enter your %1$s</string>
+    <string name="upload_story_tittle">Upload Story</string>
+    <string name="failure_ket">\"Failure : \"</string>
+    <string name="setting_language" translatable="false">Language</string>
+    <string name="input_image" translatable="false">Please upload your image first!</string>
+    <string name="normal_type">Normal</string>
+    <string name="login_image" translatable="false">Login Image</string>
+    <string name="satelit_type">Satelit</string>
+    <string name="terrain_type">Terrain</string>
+    <string name="hybrid_type">Hybrid</string>
+    <string name="my_loc">My Location</string>
+    <string name="maps_location">Location</string>
+    <string name="add_story" translatable="false">Add Story</string>
     <string name="floating_action_button_chatrooms">floating action button chatrooms</string>
     <string name="enter_message">enter message</string>
     <string name="logo">logo</string>
     <string name="confirm_password">confirm password</string>
     <string name="already_a_user_login">Already have an account?</string>
+    <string name="timeout">Timeout</string>
+    <string name="call">call</string>
+    <string name="photo">photo</string>
+    <string name="password_hint">Text Your Password</string>
+    <string name="signup_keterangan">Have Already Account ?</string>
+    <string name="tittle_alert">Great</string>
+    <string name="message_success_alert">Account successfully created!</string>
+    <string name="next">Next!</string>
+    <string name="signup_error">Signup failed, please try again!</string>
+    <string name="retry">Retry</string>
     <!--    <string name="default_web_client_id">Web Client ID</string>-->
 </resources>
