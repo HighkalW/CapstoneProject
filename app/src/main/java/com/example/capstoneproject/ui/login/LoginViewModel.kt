@@ -1,15 +1,14 @@
 package com.example.capstoneproject.ui.login
 
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
 import android.util.Patterns
-import com.example.capstoneproject.data.repo.LoginRepository
-import com.example.capstoneproject.data.Result
+import androidx.lifecycle.*
+
 
 import com.example.capstoneproject.R
+import com.example.capstoneproject.data.repo.UserRepo
+import kotlinx.coroutines.launch
 
-class LoginViewModel(private val loginRepository: LoginRepository) : ViewModel() {
+class LoginViewModel(private val repo: UserRepo) : ViewModel() {
 
     private val _loginForm = MutableLiveData<LoginFormState>()
     val loginFormState: LiveData<LoginFormState> = _loginForm
@@ -17,16 +16,15 @@ class LoginViewModel(private val loginRepository: LoginRepository) : ViewModel()
     private val _loginResult = MutableLiveData<LoginResult>()
     val loginResult: LiveData<LoginResult> = _loginResult
 
-    fun login(username: String, password: String) {
-        // can be launched in a separate asynchronous job
-        val result = loginRepository.login(username, password)
+    fun login(email: String, password: String) = repo.login(email, password)
 
-        if (result is Result.Success) {
-            _loginResult.value =
-                LoginResult(success = LoggedInUserView(displayName = result.data.displayName))
-        } else {
-            _loginResult.value = LoginResult(error = R.string.login_failed)
+    fun setToken(token: String, isLogin: Boolean){
+        viewModelScope.launch {
+            repo.setToken(token, isLogin)
         }
+    }
+    fun getToken() : LiveData<String> {
+        return repo.getToken().asLiveData()
     }
 
     fun loginDataChanged(username: String, password: String) {
