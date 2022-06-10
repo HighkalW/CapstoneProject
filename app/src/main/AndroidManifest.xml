@@ -32,11 +32,22 @@
         android:roundIcon="@mipmap/ic_launcher_nawara_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CapstoneProject">
-
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCqdbFEWGkHp3xvTJ2ghurydTBWn7htDK4" />
+        <activity
+            android:name=".ui.signup.SignupActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.map.MapsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.story.StoryActivity"
+            android:exported="false" />
         <activity
             android:name=".ui.splashscreen.SplashScreenActivity"
-            tools:node="merge"
-            android:exported="true">
+            android:exported="true"
+            tools:node="merge">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -48,7 +59,7 @@
             android:exported="false" />
         <activity
             android:name=".ui.main.MainActivity"
-            android:exported="true"/>
+            android:exported="true" />
         <activity
             android:name=".ui.main.AuthenticationActivity"
             android:exported="true" />
@@ -58,6 +69,15 @@
         <activity
             android:name=".ui.story.CreatePostActivity"
             android:exported="true" />
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.capstoneproject.ui.story"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
     </application>
 
 </manifest>
