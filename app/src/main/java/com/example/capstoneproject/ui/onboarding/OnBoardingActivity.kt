@@ -8,7 +8,7 @@ import android.view.WindowInsets
 import android.view.WindowManager
 import com.example.capstoneproject.ui.main.MainActivity
 import com.example.capstoneproject.databinding.ActivityOnBoardingBinding
-import com.example.capstoneproject.ui.login.LoginActivity
+
 
 class OnBoardingActivity : AppCompatActivity() {
     private lateinit var binding: ActivityOnBoardingBinding
@@ -23,7 +23,6 @@ class OnBoardingActivity : AppCompatActivity() {
             startActivity(Intent(this, MainActivity::class.java))
             finish()
         }
-
         setupView()
     }
 
