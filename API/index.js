@@ -36,15 +36,15 @@ const fileFilter = (req, file, cb) => {
     }
 }
 // connect ke database mongoDB
-mongoose.connect("mongodb://localhost:27017/restful_db",{ 
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-});
-
-// mongoose.connect("mongodb+srv://bernatd:24nPjNaGsx8kiGat@firstcluster.dhuw6.mongodb.net/?retryWrites=true&w=majority",{
-//     useNewUrlParser:true,
+// mongoose.connect("mongodb://localhost:27017/restful_db",{ 
+//     useNewUrlParser: true,
 //     useUnifiedTopology: true
 // });
+
+mongoose.connect("mongodb+srv://bernatd:24nPjNaGsx8kiGat@mycluster.dhuw6.mongodb.net/?retryWrites=true&w=majority",{
+    useNewUrlParser:true,
+    useUnifiedTopology: true
+});
 const db = mongoose.connection;
 db.on('error', (error)=> console.error(error));
 db.once('open', () => console.log('Database Connected'));
