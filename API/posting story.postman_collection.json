@@ -1,0 +1,181 @@
+{
+	"info": {
+		"_postman_id": "045299f0-d32f-4baa-911f-c16581c27876",
+		"name": "posting story",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21153825"
+	},
+	"item": [
+		{
+			"name": "Post Story",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "pariwisatasa",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/Asus/Desktop/Folder Bernatd/bangkit/img/rajaampat.jpg"
+						},
+						{
+							"key": "desc",
+							"value": "coba tes",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/v1/stories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"v1",
+						"stories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Story",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"ini kisahku\",\r\n    \"image\": \"img.png\",\r\n    \"body\" : \"saat itu dosen ku jahat\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/v1/stories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"v1",
+						"stories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Story by id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost:3000/v1/stories/62a451d84cbc48321039a971",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"v1",
+						"stories",
+						"62a451d84cbc48321039a971"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Story By id",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "my face",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/Asus/Desktop/Folder Bernatd/bangkit/img/bernatd.jpeg"
+						},
+						{
+							"key": "desc",
+							"value": "hahahah",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/v1/stories/629c8e07b0be1d375c24849e",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"v1",
+						"stories",
+						"629c8e07b0be1d375c24849e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Story",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"ini kisahku\",\r\n    \"image\": \"img.png\",\r\n    \"body\" : \"saat itu dosen ku jahat banget\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/v1/stories/629c8e07b0be1d375c24849e",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"v1",
+						"stories",
+						"629c8e07b0be1d375c24849e"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
