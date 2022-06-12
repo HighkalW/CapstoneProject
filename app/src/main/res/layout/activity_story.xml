@@ -51,14 +51,16 @@
             app:layout_constraintStart_toEndOf="@+id/guideline_vertical"
             app:layout_constraintTop_toBottomOf="@+id/previewImageView" />
 
-        <com.google.android.material.switchmaterial.SwitchMaterial
-            android:id="@+id/switch_location"
+        <com.example.capstoneproject.customview.MyEditText
+            android:id="@+id/edt_title"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="@string/share_location"
+            android:hint="@string/title_hint"
+            android:importantForAutofill="no"
+            android:inputType="textMultiLine"
             app:layout_constraintEnd_toEndOf="@+id/previewImageView"
             app:layout_constraintStart_toStartOf="@+id/previewImageView"
-            app:layout_constraintTop_toBottomOf="@+id/edt_desc" />
+            app:layout_constraintTop_toBottomOf="@id/btn_gallery" />
 
         <com.example.capstoneproject.customview.MyEditText
             android:id="@+id/edt_desc"
@@ -67,21 +69,20 @@
             android:hint="@string/description_hint"
             android:importantForAutofill="no"
             android:inputType="textMultiLine"
-            app:layout_constraintEnd_toEndOf="@+id/previewImageView"
-            app:layout_constraintStart_toStartOf="@+id/previewImageView"
-            app:layout_constraintTop_toBottomOf="@id/btn_gallery" />
+            app:layout_constraintEnd_toEndOf="@+id/edt_title"
+            app:layout_constraintStart_toStartOf="@+id/edt_title"
+            app:layout_constraintTop_toBottomOf="@id/edt_title"
+            />
 
         <Button
             android:id="@+id/btn_upload"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="@string/upload"
-            android:layout_marginBottom="16dp"
-            android:layout_marginTop="16dp"
             android:backgroundTint="@color/colorPrimary"
-            app:layout_constraintTop_toBottomOf="@id/switch_location"
+            android:text="@string/upload"
             app:layout_constraintEnd_toEndOf="@+id/previewImageView"
-            app:layout_constraintStart_toStartOf="@+id/previewImageView" />
+            app:layout_constraintStart_toStartOf="@+id/previewImageView"
+            app:layout_constraintTop_toBottomOf="@+id/edt_desc" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline_vertical"
@@ -100,8 +101,10 @@
             android:background="@color/light_variants"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
 
             <ProgressBar
                 android:layout_width="wrap_content"
