@@ -20,8 +20,6 @@ import androidx.activity.result.contract.ActivityResultContracts
 import com.example.capstoneproject.databinding.ActivityLoginBinding
 
 import com.example.capstoneproject.R
-import com.example.capstoneproject.data.repo.LoginDataSource
-import com.example.capstoneproject.data.repo.LoginRepository
 import com.example.capstoneproject.ui.main.MainActivity
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
@@ -56,10 +54,10 @@ class LoginActivity : AppCompatActivity() {
         googleSignInClient = GoogleSignIn.getClient(this, gso)
 
         auth = Firebase.auth
-
-        binding.btnGoogleLogin!!.setOnClickListener {
-            signIn()
-        }
+//
+//        binding.btnGoogleLogin!!.setOnClickListener {
+//            signIn()
+//        }
 
         val username = binding.username
         val password = binding.password
