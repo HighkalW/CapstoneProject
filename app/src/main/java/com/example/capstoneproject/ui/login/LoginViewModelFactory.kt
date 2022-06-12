@@ -9,12 +9,12 @@ import com.example.capstoneproject.data.repo.LoginRepository
  * ViewModel provider factory to instantiate LoginViewModel.
  * Required given LoginViewModel has a non-empty constructor
  */
-class LoginViewModelFactory : ViewModelProvider.Factory {
+class LoginViewModelFactory(loginRepository: LoginRepository) : ViewModelProvider.Factory {
 
     @Suppress("UNCHECKED_CAST")
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
         if (modelClass.isAssignableFrom(LoginViewModel::class.java)) {
-            return LoginViewModel(
+            return LoginViewModelFactory(
                 loginRepository = LoginRepository(
                     dataSource = LoginDataSource()
                 )

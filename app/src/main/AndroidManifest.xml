@@ -69,6 +69,7 @@
         <activity
             android:name=".ui.story.CreatePostActivity"
             android:exported="true" />
+
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="com.example.capstoneproject.ui.story"

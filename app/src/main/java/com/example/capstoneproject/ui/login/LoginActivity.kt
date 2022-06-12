@@ -20,6 +20,8 @@ import androidx.activity.result.contract.ActivityResultContracts
 import com.example.capstoneproject.databinding.ActivityLoginBinding
 
 import com.example.capstoneproject.R
+import com.example.capstoneproject.data.repo.LoginDataSource
+import com.example.capstoneproject.data.repo.LoginRepository
 import com.example.capstoneproject.ui.main.MainActivity
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
@@ -64,7 +66,12 @@ class LoginActivity : AppCompatActivity() {
         val login = binding.login
         val loading = binding.loading
 
-        loginViewModel = ViewModelProvider(this, LoginViewModelFactory())
+        loginViewModel = ViewModelProvider(this, LoginViewModelFactory(
+            LoginRepository(
+                dataSource = LoginDataSource()
+            )
+        )
+        )
             .get(LoginViewModel::class.java)
 
         loginViewModel.loginFormState.observe(this@LoginActivity, Observer {
