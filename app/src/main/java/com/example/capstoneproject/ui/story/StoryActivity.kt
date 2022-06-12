@@ -1,4 +1,4 @@
-package com.example.capstoneproject.ui.story
+ package com.example.capstoneproject.ui.story
 
 import android.Manifest
 import android.annotation.SuppressLint
@@ -19,10 +19,9 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.capstoneproject.R
 import com.example.capstoneproject.data.Result
 import com.example.capstoneproject.databinding.ActivityStoryBinding
-import com.example.capstoneproject.ui.map.MapsActivity
+import com.example.capstoneproject.ui.viewmodelfactory.StoryVMF
 import com.example.capstoneproject.util.MediaUtil
 import com.example.capstoneproject.util.animateVisibility
-import com.example.submissionintermedieteakhir.ui.viewmodelfactory.StoryVMF
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
 import okhttp3.MediaType.Companion.toMediaType
@@ -49,7 +48,7 @@ class StoryActivity : AppCompatActivity() {
         binding = ActivityStoryBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        token = intent.getStringExtra(MapsActivity.EXTRA_TOKEN).toString()
+//        token = intent.getStringExtra(MapsActivity.EXTRA_TOKEN).toString()
 
         if (!allPermissionsGranted()) {
             ActivityCompat.requestPermissions(
@@ -66,16 +65,8 @@ class StoryActivity : AppCompatActivity() {
         binding.btnGallery.setOnClickListener { startGallery() }
         binding.btnUpload.setOnClickListener { uploadImage() }
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this)
-        binding.switchLocation.setOnCheckedChangeListener { _, isChecked ->
-            if (isChecked) {
-                getMyLocation()
-            } else {
-                location = null
-            }
-        }
+
     }
-
-
 
     override fun onRequestPermissionsResult(
         requestCode: Int,
@@ -116,6 +107,7 @@ class StoryActivity : AppCompatActivity() {
     }
     private fun uploadImage() {
         if (getFile != null) {
+            val title = binding.edtTitle.text.toString().trim()
             val description = binding.edtDesc.text.toString().trim()
             if (description.isEmpty()) {
                 binding.edtDesc.error =
@@ -123,6 +115,7 @@ class StoryActivity : AppCompatActivity() {
             } else {
                 showLoading(true)
                 val file = MediaUtil.reduceFileImage(getFile as File)
+                val title = title.toRequestBody("text/plain".toMediaType())
                 val descMedia = description.toRequestBody("text/plain".toMediaType())
                 val requestImageFile = file.asRequestBody("image/jpeg".toMediaTypeOrNull())
                 val imageMultipart: MultipartBody.Part = MultipartBody.Part.createFormData(
@@ -130,13 +123,8 @@ class StoryActivity : AppCompatActivity() {
                     file.name,
                     requestImageFile
                 )
-                var lat: RequestBody? = null
-                var lon: RequestBody? = null
-                if (location != null) {
-                    lat = location?.latitude.toString().toRequestBody("text/plain".toMediaType())
-                    lon = location?.longitude.toString().toRequestBody("text/plain".toMediaType())
-                }
-                storyViewModel.uploadStory(token, imageMultipart, descMedia, lat, lon)
+
+                storyViewModel.uploadStory(token, imageMultipart, descMedia, title )
                     .observe(this) { result ->
                         if (result != null) {
                             when (result) {
@@ -144,13 +132,13 @@ class StoryActivity : AppCompatActivity() {
                                     showLoading(true)
                                 }
                                 is Result.Success -> {
-                                    showLoading(true)
+                                    showLoading(false)
                                     Toast.makeText(this, result.data.message, Toast.LENGTH_SHORT)
                                         .show()
                                     finish()
                                 }
                                 is Result.Error -> {
-                                    showLoading(true)
+                                    showLoading(false)
                                     Toast.makeText(
                                         this,
                                         getString(R.string.failure_ket) + result.error,
@@ -172,7 +160,6 @@ class StoryActivity : AppCompatActivity() {
             btnGallery.isEnabled = !isLoading
             btnUpload.isEnabled = !isLoading
             edtDesc.isEnabled = !isLoading
-            switchLocation.isEnabled = !isLoading
 
             if (isLoading) {
                 viewProgressbar.animateVisibility(true)
@@ -223,20 +210,8 @@ class StoryActivity : AppCompatActivity() {
                 this.applicationContext,
                 Manifest.permission.ACCESS_FINE_LOCATION
             ) == PackageManager.PERMISSION_GRANTED
-        ) {
-            fusedLocationClient.lastLocation.addOnSuccessListener { loc ->
-                if (loc != null) {
-                    this.location = loc
-                } else {
-                    binding.switchLocation.isChecked = false
-                    Toast.makeText(
-                        this,
-                        resources.getString(R.string.loc_not_found),
-                        Toast.LENGTH_SHORT
-                    ).show()
-                }
-            }
-        } else {
+        )
+            else {
             requestPermissionLauncher.launch(Manifest.permission.ACCESS_FINE_LOCATION)
         }
     }

@@ -1,4 +1,4 @@
-package com.example.submissionintermedieteakhir.ui.viewmodelfactory
+package com.example.capstoneproject.ui.viewmodelfactory
 
 import android.content.Context
 import androidx.lifecycle.ViewModel
@@ -8,7 +8,6 @@ import com.example.capstoneproject.data.repo.UserRepo
 import com.example.capstoneproject.di.StoryInject
 import com.example.capstoneproject.di.UserInject
 import com.example.capstoneproject.ui.main.MainViewModel
-import com.example.capstoneproject.ui.map.MapsViewModel
 import com.example.capstoneproject.ui.story.StoryViewModel
 
 class StoryVMF private constructor(private val userRepo: UserRepo, private val storyRepo: StoryRepo) :
@@ -22,9 +21,7 @@ class StoryVMF private constructor(private val userRepo: UserRepo, private val s
             modelClass.isAssignableFrom(StoryViewModel::class.java) -> {
                 StoryViewModel(storyRepo) as T
             }
-            modelClass.isAssignableFrom(MapsViewModel::class.java) -> {
-                MapsViewModel(storyRepo) as T
-            }
+
             else -> {
                 throw IllegalArgumentException("Unknown ViewModel class: " + modelClass.name)
             }

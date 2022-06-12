@@ -64,7 +64,7 @@ class StoryRemoteMedia(
                     RemoteKeys(id = it.id, prevKey = prevKey, nextKey = nextKey)
                 }
                 val stories = responseData.listStory.map {
-                    Story(it.id, it.name, it.description, it.photoUrl, it.createdAt, it.lon, it.lat)
+                    Story(it.id, it.name, it.description, it.photoUrl, it.createAt)
                 }
                 database.remoteKeyDao().insertAll(keys)
                 database.storyDao().insertStory(stories)
