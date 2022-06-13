@@ -54,17 +54,22 @@ class LoginActivity : AppCompatActivity() {
         googleSignInClient = GoogleSignIn.getClient(this, gso)
 
         auth = Firebase.auth
-
-        binding.btnGoogleLogin!!.setOnClickListener {
-            signIn()
-        }
+//
+//        binding.btnGoogleLogin!!.setOnClickListener {
+//            signIn()
+//        }
 
         val username = binding.username
         val password = binding.password
         val login = binding.login
         val loading = binding.loading
 
-        loginViewModel = ViewModelProvider(this, LoginViewModelFactory())
+        loginViewModel = ViewModelProvider(this, LoginViewModelFactory(
+            LoginRepository(
+                dataSource = LoginDataSource()
+            )
+        )
+        )
             .get(LoginViewModel::class.java)
 
         loginViewModel.loginFormState.observe(this@LoginActivity, Observer {

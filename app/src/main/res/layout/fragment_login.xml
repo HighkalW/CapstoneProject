@@ -75,13 +75,24 @@
         app:layout_constraintStart_toStartOf="@id/password_text"
         app:layout_constraintTop_toBottomOf="@id/password_text" />
 
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/btn_google_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_login"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login" />
+
     <ProgressBar
         android:id="@+id/login_progressBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="104dp"
         android:visibility="gone"
         app:layout_constraintEnd_toEndOf="@id/btn_login"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="@id/btn_login"
         app:layout_constraintTop_toBottomOf="@id/btn_login"
         tools:visibility="visible" />

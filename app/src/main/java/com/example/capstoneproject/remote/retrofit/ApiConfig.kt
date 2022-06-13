@@ -7,7 +7,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 object ApiConfig {
-    var BASE_URL = "http://api.nawara.com/v1/"
+    var BASE_URL = "http://34.126.135.62"
 
     fun getApiService(): ApiService {
         val loggingInterceptor = if (BuildConfig.DEBUG) {

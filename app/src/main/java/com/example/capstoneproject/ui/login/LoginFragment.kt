@@ -1,5 +1,6 @@
 package com.example.capstoneproject.ui.login
 
+import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.text.TextUtils
@@ -10,12 +11,20 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.activity.result.contract.ActivityResultContracts
 import com.example.capstoneproject.ui.main.MainActivity
 import com.example.capstoneproject.R
 import com.example.capstoneproject.databinding.FragmentLoginBinding
 import com.example.capstoneproject.ui.signup.SignUpFragment
+import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions
+import com.google.android.gms.common.api.ApiException
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseUser
+import com.google.firebase.auth.GoogleAuthProvider
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 
 class LoginFragment : Fragment() {
 
@@ -45,8 +54,23 @@ class LoginFragment : Fragment() {
                 .replace(R.id.auth_fragmentContainer, SignUpFragment())
                 .addToBackStack(null)
                 .commit()
+
+
         }
 
+        val gso = GoogleSignInOptions
+            .Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+            .requestIdToken("626795924548-v5sq2b8pl44v4e8uj1i0meud8l4kcbbi.apps.googleusercontent.com")
+            .requestEmail()
+            .requestProfile()
+            .build()
+        googleSignInClient = GoogleSignIn.getClient(requireActivity(), gso)
+
+        auth = Firebase.auth
+
+        binding.btnGoogleLogin!!.setOnClickListener {
+            signIn()
+        }
         binding.btnLogin.setOnClickListener {
             val email = binding.emailText.editText?.text.toString()
             val password = binding.passwordText.editText?.text.toString()
@@ -98,6 +122,46 @@ class LoginFragment : Fragment() {
         }
 
     }
+    private fun signIn() {
+        val signInIntent = googleSignInClient.signInIntent
+        resultLauncher.launch(signInIntent)
+    }
+    private var resultLauncher = registerForActivityResult(
+        ActivityResultContracts.StartActivityForResult()
+    ) {result ->
+        if (result.resultCode == Activity.RESULT_OK){
+            val task = GoogleSignIn.getSignedInAccountFromIntent(result.data)
+            try {
+                val account = task.getResult(ApiException::class.java)
+                Log.d(TAG, "firebaseAuthWithGoogle" + account.id)
+                firebaseAuthWithGoogle(account.idToken!!)
+            } catch (e: ApiException) {
+                Log.w(TAG,"Google sign in failed", e)
+            }
+        }
+    }
+
+    private fun firebaseAuthWithGoogle(idToken: String){
+        val credential = GoogleAuthProvider.getCredential(idToken, null)
+        auth.signInWithCredential(credential)
+            .addOnCompleteListener(requireActivity()) {task ->
+                if (task.isSuccessful){
+                    Log.d(TAG, "singInWithCredential:success")
+                    val user = auth.currentUser
+                    updateUI(user)
+                } else {
+                    Log.w(TAG, "singInWithCredential:failure", task.exception)
+                    updateUI(null)
+                }
+            }
+    }
+    private fun updateUI(currentUser: FirebaseUser?){
+        if (currentUser != null) {
+            startActivity(Intent(requireActivity(), MainActivity::class.java))
+            activity?.finish()
+        }
+    }
+
 
     override fun onDestroyView() {
         super.onDestroyView()

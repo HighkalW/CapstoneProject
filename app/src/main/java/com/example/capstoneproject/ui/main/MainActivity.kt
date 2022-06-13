@@ -15,19 +15,20 @@ import com.example.capstoneproject.databinding.ActivityMainBinding
 import com.example.capstoneproject.ui.chat.ChatroomFragment
 import com.example.capstoneproject.ui.detail.FeedFragment
 import com.example.capstoneproject.ui.detail.ProfileFragment
-import com.example.capstoneproject.ui.login.LoginActivity
 import com.example.capstoneproject.ui.story.StoryActivity
+import com.example.capstoneproject.ui.viewmodelfactory.StoryVMF
 import com.example.capstoneproject.util.UserUtil
-import com.example.submissionintermedieteakhir.ui.viewmodelfactory.StoryVMF
 import com.google.firebase.auth.FirebaseAuth
 
 class MainActivity : AppCompatActivity() {
+
     private lateinit var binding: ActivityMainBinding
     private lateinit var mainViewModel: MainViewModel
     private lateinit var token: String
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         /*
@@ -96,12 +97,12 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        mainViewModel.isLogin().observe(this){
-            if (!it){
-                startActivity(Intent(this, LoginActivity::class.java))
-                finish()
-            }
-        }
+//        mainViewModel.isLogin().observe(this){
+//            if (!it){
+//                startActivity(Intent(this, AuthenticationActivity::class.java))
+//                finish()
+//            }
+//        }
 
     }
     private fun setupAction() {

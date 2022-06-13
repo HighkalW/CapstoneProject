@@ -15,7 +15,7 @@
         android:title="@string/emergency_navbar" />
     <item
         android:id="@+id/consult_item"
-        android:icon="@drawable/ic_consult_unclick"
+        android:icon="@drawable/ic_consult_unclicked"
         android:title="@string/consult_navbar" />
     <item
         android:id="@+id/profile_item"

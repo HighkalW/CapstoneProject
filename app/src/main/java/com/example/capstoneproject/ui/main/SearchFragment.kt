@@ -36,8 +36,8 @@ class SearchFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.searchToolbar.title = "Search Users"
-        (activity as? MainActivity)?.setSupportActionBar(binding.searchToolbar)
-        (activity as? MainActivity)?.supportActionBar?.show()
+//        (activity as? MainActivity)?.setSupportActionBar(binding.searchToolbar)
+//        (activity as? MainActivity)?.supportActionBar?.show()
 
         setHasOptionsMenu(true)
 

@@ -14,6 +14,4 @@ data class Story(
     val description: String,
     @ColumnInfo(name = "photo_url") val photoUrl: String,
     @ColumnInfo(name="created_at") val createdAt: String,
-    val lon : Double?,
-    val lat : Double?
 ): Parcelable

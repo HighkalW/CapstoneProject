@@ -38,9 +38,9 @@
         <activity
             android:name=".ui.signup.SignupActivity"
             android:exported="true" />
-        <activity
-            android:name=".ui.map.MapsActivity"
-            android:exported="false" />
+        <activity android:name=".ui.login.LoginActivity"
+            android:exported="false"/>
+
         <activity
             android:name=".ui.story.StoryActivity"
             android:exported="false" />
@@ -69,6 +69,7 @@
         <activity
             android:name=".ui.story.CreatePostActivity"
             android:exported="true" />
+
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="com.example.capstoneproject.ui.story"
