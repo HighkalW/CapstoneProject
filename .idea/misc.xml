@@ -10,36 +10,53 @@
         <entry key="..\:/Project/Android_Studio/CapstoneProject/app/src/main/res/layout-night/activity_splashscreen.xml" value="0.25" />
         <entry key="..\:/Project/Android_Studio/CapstoneProject/app/src/main/res/layout-night/items_story.xml" value="0.21739130434782608" />
         <entry key="..\:/Project/Android_Studio/CapstoneProject/app/src/main/res/layout-w1240dp/activity_login.xml" value="0.15729585006693442" />
+        <entry key="..\:/Project/Android_Studio/CapstoneProject/app/src/main/res/layout-w936dp/activity_login.xml" value="0.116796875" />
         <entry key="..\:/Project/Android_Studio/CapstoneProject/app/src/main/res/layout/activity_detail.xml" value="0.20253164556962025" />
         <entry key="..\:/Project/Android_Studio/CapstoneProject/app/src/main/res/layout/activity_login.xml" value="0.33" />
         <entry key="..\:/Project/Android_Studio/CapstoneProject/app/src/main/res/layout/activity_on_boarding.xml" value="0.21739130434782608" />
-        <entry key="..\:/Project/Android_Studio/CapstoneProject/app/src/main/res/layout/activity_splashscreen.xml" value="0.25" />
+        <entry key="..\:/Project/Android_Studio/CapstoneProject/app/src/main/res/layout/activity_splashscreen.xml" value="0.1" />
         <entry key="..\:/Project/Android_Studio/CapstoneProject/app/src/main/res/layout/activity_splashscreen_night.xml" value="0.21739130434782608" />
         <entry key="..\:/Project/Android_Studio/CapstoneProject/app/src/main/res/layout/items_story.xml" value="0.25" />
         <entry key="..\:/Project/Android_Studio/CapstoneProject/app/src/main/res/layout/signup_try.xml" value="0.15572916666666667" />
         <entry key="..\:/Project/Android_Studio/CapstoneProject/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.13" />
         <entry key="..\:/Project/Android_Studio/CapstoneProject/app/src/main/res/mipmap-anydpi-v26/ic_launcher_nawara.xml" value="0.1655" />
         <entry key="..\:/Project/Android_Studio/CapstoneProject/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1655" />
+        <entry key="..\:/Semester 6/CapstoneProject-main/app/src/main/res/layout/activity_login.xml" value="0.10989583333333333" />
+        <entry key="..\:/Semester 6/CapstoneProject-main/app/src/main/res/layout/activity_machine.xml" value="0.10989583333333333" />
+        <entry key="..\:/Semester 6/CapstoneProject-main/app/src/main/res/layout/activity_main.xml" value="0.10989583333333333" />
+        <entry key="..\:/Semester 6/CapstoneProject-main/app/src/main/res/layout/activity_maps.xml" value="0.10989583333333333" />
+        <entry key="..\:/Semester 6/CapstoneProject-main/app/src/main/res/layout/activity_on_boarding.xml" value="0.1" />
+        <entry key="..\:/Semester 6/CapstoneProject-main/app/src/main/res/layout/fragment_login.xml" value="0.1" />
+        <entry key="..\:/Semester 6/FixingCapstones/CapstoneProject/app/src/main/res/drawable/add_icon.xml" value="0.1" />
+        <entry key="..\:/Semester 6/FixingCapstones/CapstoneProject/app/src/main/res/drawable/ic_consult_clicked.xml" value="0.1" />
+        <entry key="..\:/Semester 6/FixingCapstones/CapstoneProject/app/src/main/res/drawable/ic_consult_unclick.xml" value="0.1" />
+        <entry key="..\:/Semester 6/FixingCapstones/CapstoneProject/app/src/main/res/drawable/ic_consult_unclicked.xml" value="0.1" />
+        <entry key="..\:/Semester 6/FixingCapstones/CapstoneProject/app/src/main/res/drawable/ic_home_unclick.xml" value="0.1" />
         <entry key="..\:/Semester 6/FixingCapstones/CapstoneProject/app/src/main/res/layout-night/activity_splashscreen.xml" value="0.1" />
         <entry key="..\:/Semester 6/FixingCapstones/CapstoneProject/app/src/main/res/layout-w1240dp/activity_login.xml" value="0.1" />
         <entry key="..\:/Semester 6/FixingCapstones/CapstoneProject/app/src/main/res/layout-w936dp/activity_login.xml" value="0.1" />
-        <entry key="..\:/Semester 6/FixingCapstones/CapstoneProject/app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="..\:/Semester 6/FixingCapstones/CapstoneProject/app/src/main/res/layout/activity_authentication.xml" value="0.10989583333333333" />
+        <entry key="..\:/Semester 6/FixingCapstones/CapstoneProject/app/src/main/res/layout/activity_detail.xml" value="0.1" />
+        <entry key="..\:/Semester 6/FixingCapstones/CapstoneProject/app/src/main/res/layout/activity_login.xml" value="0.176" />
+        <entry key="..\:/Semester 6/FixingCapstones/CapstoneProject/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Semester 6/FixingCapstones/CapstoneProject/app/src/main/res/layout/activity_maps.xml" value="0.10989583333333333" />
+        <entry key="..\:/Semester 6/FixingCapstones/CapstoneProject/app/src/main/res/layout/activity_on_boarding.xml" value="0.1" />
+        <entry key="..\:/Semester 6/FixingCapstones/CapstoneProject/app/src/main/res/layout/activity_signup.xml" value="0.10989583333333333" />
         <entry key="..\:/Semester 6/FixingCapstones/CapstoneProject/app/src/main/res/layout/activity_splashscreen.xml" value="0.1" />
+        <entry key="..\:/Semester 6/FixingCapstones/CapstoneProject/app/src/main/res/layout/activity_story.xml" value="0.176" />
+        <entry key="..\:/Semester 6/FixingCapstones/CapstoneProject/app/src/main/res/layout/fragment_chat.xml" value="0.20516304347826086" />
+        <entry key="..\:/Semester 6/FixingCapstones/CapstoneProject/app/src/main/res/layout/fragment_login.xml" value="0.17391304347826086" />
+        <entry key="..\:/Semester 6/FixingCapstones/CapstoneProject/app/src/main/res/layout/item_user.xml" value="0.18070652173913043" />
+        <entry key="..\:/Semester 6/FixingCapstones/CapstoneProject/app/src/main/res/layout/items_load.xml" value="0.10885416666666667" />
+        <entry key="..\:/Semester 6/FixingCapstones/CapstoneProject/app/src/main/res/layout/items_story.xml" value="0.2" />
+        <entry key="..\:/Semester 6/FixingCapstones/CapstoneProject/app/src/main/res/menu/bottom_nav_view.xml" value="0.1" />
+        <entry key="..\:/Semester 6/FixingCapstones/CapstoneProject/app/src/main/res/menu/items_menu.xml" value="0.16990291262135923" />
+        <entry key="..\:/Semester 6/FixingCapstones/CapstoneProject/app/src/main/res/menu/map_options.xml" value="0.10989583333333333" />
+        <entry key="..\:/Semester 6/FixingCapstones/CapstoneProject/app/src/main/res/xml/network_security_config.xml" value="0.10885416666666667" />
         <entry key="..\:/Semester 6/TestCapstones/CapstoneProject/app/src/main/res/layout/activity_detail.xml" value="0.2" />
         <entry key="..\:/Semester 6/TestCapstones/CapstoneProject/app/src/main/res/layout/activity_login.xml" value="0.10989583333333333" />
         <entry key="..\:/Semester 6/TestCapstones/CapstoneProject/app/src/main/res/layout/activity_main.xml" value="0.10989583333333333" />
         <entry key="..\:/Semester 6/TestCapstones/CapstoneProject/app/src/main/res/layout/activity_on_boarding.xml" value="0.1" />
-        <entry key="..\:/Users/User/Documents/CapstoneProject/app/src/main/res/drawable/bg_appbar.xml" value="0.1" />
-        <entry key="..\:/Users/User/Documents/CapstoneProject/app/src/main/res/drawable/comment_background.xml" value="0.1085" />
-        <entry key="..\:/Users/User/Documents/CapstoneProject/app/src/main/res/drawable/comment_icon.xml" value="0.1085" />
-        <entry key="..\:/Users/User/Documents/CapstoneProject/app/src/main/res/layout/activity_callemergency.xml" value="0.1" />
-        <entry key="..\:/Users/User/Documents/CapstoneProject/app/src/main/res/layout/activity_comments.xml" value="0.22" />
-        <entry key="..\:/Users/User/Documents/CapstoneProject/app/src/main/res/layout/activity_create_post.xml" value="0.22" />
-        <entry key="..\:/Users/User/Documents/CapstoneProject/app/src/main/res/layout/activity_main.xml" value="0.33" />
-        <entry key="..\:/Users/User/Documents/CapstoneProject/app/src/main/res/layout/activity_signup.xml" value="0.1" />
-        <entry key="..\:/Users/User/Documents/CapstoneProject/app/src/main/res/layout/fragment_feed.xml" value="0.15" />
-        <entry key="..\:/Users/User/Documents/CapstoneProject/app/src/main/res/layout/fragment_profile.xml" value="0.22" />
-        <entry key="..\:/Users/User/Documents/CapstoneProject/app/src/main/res/layout/fragment_signup.xml" value="0.1" />
       </map>
     </option>
   </component>

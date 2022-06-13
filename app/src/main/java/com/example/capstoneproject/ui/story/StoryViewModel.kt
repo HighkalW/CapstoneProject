@@ -11,7 +11,6 @@ class StoryViewModel(private val storyRepo: StoryRepo) : ViewModel() {
         token: String,
         imageMultipart: MultipartBody.Part,
         desc: RequestBody,
-        lat: RequestBody?,
-        lon: RequestBody?
-    ) = storyRepo.uploadStory(token, imageMultipart, desc, lat, lon)
+        title: RequestBody
+    ) = storyRepo.uploadStory(imageMultipart, desc, title )
 }

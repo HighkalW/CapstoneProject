@@ -1,17 +1,20 @@
-package com.example.capstoneproject.remote.response
+package com.example.capstoneproject.models
 
 import com.google.gson.annotations.SerializedName
 
-data class StoryResponse(
+data class Response(
 
-	@field:SerializedName("StoryResponse")
-	val listStory: List<StoryResponseItem>
+	@field:SerializedName("data")
+	val data: Data? = null,
+
+	@field:SerializedName("message")
+	val message: String? = null
 )
 
-data class StoryResponseItem(
+data class Data(
 
 	@field:SerializedName("image")
-	val photoUrl: String,
+	val image: String? = null,
 
 	@field:SerializedName("createdAt")
 	val createdAt: String? = null,
@@ -20,14 +23,14 @@ data class StoryResponseItem(
 	val V: Int? = null,
 
 	@field:SerializedName("_id")
-	val id: String,
+	val id: String? = null,
 
 	@field:SerializedName("title")
-	val name: String,
+	val title: String? = null,
 
 	@field:SerializedName("desc")
-	val description: String,
+	val desc: String? = null,
 
 	@field:SerializedName("updatedAt")
-	val createAt: String
+	val updatedAt: String? = null
 )

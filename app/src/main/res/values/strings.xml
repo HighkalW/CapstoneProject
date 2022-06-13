@@ -56,7 +56,7 @@
     <string name="img_type">image/*</string>
     <string name="choose_picture">choose picture</string>
     <string name="loc_not_found">location not found</string>
-    <string name="author">Nawara</string>
+    <string name="author">com.example.capstoneproject.ui.story</string>
     <string name="description_hint">Ceritakan pengalamanmu!</string>
     <string name="upload">Upload</string>
     <string name="permission_denied" translatable="false">Can\'t get permission</string>
@@ -88,5 +88,6 @@
     <string name="next">Next!</string>
     <string name="signup_error">Signup failed, please try again!</string>
     <string name="retry">Retry</string>
+    <string name="title_hint">Judul Ceritamu!</string>
     <!--    <string name="default_web_client_id">Web Client ID</string>-->
 </resources>

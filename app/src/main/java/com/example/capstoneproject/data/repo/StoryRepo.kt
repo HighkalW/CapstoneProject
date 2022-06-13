@@ -17,25 +17,16 @@ import java.lang.Exception
 
 class StoryRepo (private val apiService: ApiService, private val storyDatabase: StoryDatabase){
 
-    fun uploadStory(token: String, imageMultipart: MultipartBody.Part, desc: RequestBody, lat: RequestBody?, lon: RequestBody?): LiveData<Result<UploadResponse>> = liveData{
+    fun uploadStory( imageMultipart: MultipartBody.Part, desc: RequestBody, title:RequestBody ): LiveData<Result<UploadResponse>> = liveData{
         emit(Result.Loading)
         try {
-            val client = apiService.uploadStory("Bearer $token",imageMultipart, desc, lat, lon)
+            val client = apiService.uploadStory(imageMultipart, desc, title )
             emit(Result.Success(client))
         }catch (e : Exception){
             emit(Result.Error(e.message.toString()))
         }
     }
 
-    fun getStoryLocation(token: String) : LiveData<Result<StoryResponse>> = liveData{
-        emit(Result.Loading)
-        try {
-            val client = apiService.getStories("Bearer $token", location = 1)
-            emit(Result.Success(client))
-        }catch (e : Exception){
-            emit(Result.Error(e.message.toString()))
-        }
-    }
 
     fun getStories(token: String): LiveData<PagingData<Story>> {
         wrapEspressoIdlingResource {
