@@ -1,14 +1,20 @@
 package com.example.capstoneproject.remote.retrofit
 
-import com.example.capstoneproject.remote.response.LoginResponse
-import com.example.capstoneproject.remote.response.RegisterResponse
-import com.example.capstoneproject.remote.response.StoryResponse
-import com.example.capstoneproject.remote.response.UploadResponse
+import com.example.capstoneproject.remote.response.*
 import okhttp3.MultipartBody
 import okhttp3.RequestBody
+import retrofit2.Call
 import retrofit2.http.*
 
 interface ApiService {
+    @POST("comment")
+    suspend fun comment(
+        @Field("comment") comment: String
+    ): CommentResponse
+
+    @GET("comment")
+    suspend fun getString(): Call<String>
+    
 
 
     @GET("stories")

@@ -14,6 +14,7 @@ import com.example.capstoneproject.R
 import com.example.capstoneproject.ui.login.LoginActivity
 import com.example.capstoneproject.ui.main.MainActivity
 import com.example.capstoneproject.ui.onboarding.OnBoardingActivity
+import com.google.firebase.auth.FirebaseAuth
 
 class SplashScreenActivity : AppCompatActivity() {
 
@@ -42,9 +43,13 @@ class SplashScreenActivity : AppCompatActivity() {
         imageLogo.startAnimation(topAnimation)
         slogan.startAnimation(buttomAnimation)
         Handler().postDelayed({
-            val intent = Intent(this, OnBoardingActivity::class.java)
-            startActivity(intent)
-            finish()
+            if (FirebaseAuth.getInstance().currentUser != null) {
+                startActivity(Intent(this, MainActivity::class.java))
+            }
+            else{
+                val intent = Intent(this, OnBoardingActivity::class.java)
+                startActivity(intent)
+                finish()}
         }, 2000)
     }
 }

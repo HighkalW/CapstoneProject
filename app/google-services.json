@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "626795924548",
+    "firebase_url": "https://nawara-351814-default-rtdb.firebaseio.com",
     "project_id": "nawara-351814",
     "storage_bucket": "nawara-351814.appspot.com"
   },
@@ -13,6 +14,22 @@
         }
       },
       "oauth_client": [
+        {
+          "client_id": "626795924548-0tj28g56r7j5m25a7nn9t5hfik7dq3k7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.capstoneproject",
+            "certificate_hash": "dc36cd0c2816043f417f92c6d15edb87e502765d"
+          }
+        },
+        {
+          "client_id": "626795924548-7um0vg5fg8kl6u61t5ac74lslhhnak17.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.capstoneproject",
+            "certificate_hash": "9f6d3555246e554c8616d9ff69d58fcd690d7fc1"
+          }
+        },
         {
           "client_id": "626795924548-v5sq2b8pl44v4e8uj1i0meud8l4kcbbi.apps.googleusercontent.com",
           "client_type": 3

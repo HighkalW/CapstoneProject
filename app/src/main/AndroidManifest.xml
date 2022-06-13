@@ -36,6 +36,9 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyCqdbFEWGkHp3xvTJ2ghurydTBWn7htDK4" />
         <activity
+            android:name=".ui.main.CallEmergencyActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.signup.SignupActivity"
             android:exported="true" />
         <activity

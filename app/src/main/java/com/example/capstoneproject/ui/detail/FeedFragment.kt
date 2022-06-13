@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.capstoneproject.adapters.FeedAdapter
 import com.example.capstoneproject.databinding.FragmentFeedBinding
 import com.example.capstoneproject.models.Post
+import com.example.capstoneproject.ui.main.CallEmergencyActivity
 import com.example.capstoneproject.ui.story.CreatePostActivity
 import com.firebase.ui.firestore.FirestoreRecyclerOptions
 import com.google.firebase.firestore.FirebaseFirestore
@@ -37,6 +38,9 @@ class FeedFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding.fab.setOnClickListener {
             startActivity(Intent(context, CreatePostActivity::class.java))
+        }
+        binding.emergency.setOnClickListener {
+            startActivity(Intent(context, CallEmergencyActivity::class.java))
         }
 
         recyclerView = binding.feedRecyclerView
@@ -78,4 +82,7 @@ class FeedFragment : Fragment() {
         _binding = null
     }
 
+    companion object {
+        const val TAG = "FeedFragment"
+    }
 }
